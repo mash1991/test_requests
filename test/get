@@ -1,0 +1,19 @@
+* About to connect() to 127.0.0.1 port 5000 (#0)
+*   Trying 127.0.0.1...
+* Connected to 127.0.0.1 (127.0.0.1) port 5000 (#0)
+> GET /request?a=1&b=2 HTTP/1.1
+> User-Agent: curl/7.29.0
+> Host: 127.0.0.1:5000
+> Accept: */*
+> 
+* HTTP 1.0, assume close after body
+< HTTP/1.0 200 OK
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 80
+< Server: Werkzeug/1.0.0 Python/3.6.2
+< Date: Sun, 29 Mar 2020 08:31:51 GMT
+< 
+{ [data not shown]
+* Closing connection 0
+query: ImmutableMultiDict([('a', '1'), ('b', '2')])
+post: ImmutableMultiDict([])

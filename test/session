@@ -1,0 +1,25 @@
+* About to connect() to 127.0.0.1 port 5000 (#0)
+*   Trying 127.0.0.1...
+* Connected to 127.0.0.1 (127.0.0.1) port 5000 (#0)
+> GET /session?c=3&b=4 HTTP/1.1
+> User-Agent: curl/7.29.0
+> Host: 127.0.0.1:5000
+> Accept: */*
+> 
+* HTTP 1.0, assume close after body
+< HTTP/1.0 200 OK
+< Content-Type: application/json
+< Content-Length: 28
+< Set-Cookie: cookie_c=3; Path=/
+< Set-Cookie: cookie_b=4; Path=/
+< Vary: Cookie
+< Set-Cookie: session=eyJiIjoiNCIsImMiOiIzIn0.XoCcQA.OhuiPSzE8ICZYg0BjBaDIoxH_e4; HttpOnly; Path=/
+< Server: Werkzeug/1.0.0 Python/3.6.2
+< Date: Sun, 29 Mar 2020 13:01:52 GMT
+< 
+{ [data not shown]
+* Closing connection 0
+{
+  "b": "4", 
+  "c": "3"
+}
